@@ -272,7 +272,7 @@ header .logo img {
 .right-title {
     font-family: 'mokoto glitch mark I';
     background: -webkit-linear-gradient(45deg, #ff0468, #f081ff);
-    opacity: 0.8;
+    
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -357,9 +357,9 @@ header .logo img {
     letter-spacing: 0.5px;
     margin-right: 70px;
     justify-content: center !important;
-    color: rgb(189, 255, 241);
+    
     border: 1px solid rgba(0, 255, 200, 0.2);
-    background: linear-gradient(308.45deg, rgba(0, 255, 200, 0.6) -94.97%, rgba(0, 255, 200, 0.05) 70.06%);
+    background: -webkit-linear-gradient(45deg, #ff0468, #f081ff);
 }
 
 #root button:hover {
