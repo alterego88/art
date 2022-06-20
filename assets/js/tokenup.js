@@ -5,11 +5,11 @@ document.querySelector('#tokennumber').textContent = localStorage.getItem('token
 let timerId = setTimeout(function tick() {
     let tokennumbercontent = document.querySelector('#tokennumber');
     let tokennumber = localStorage.getItem('tokennumber') || staticNumber;
-    let randomNumber = Math.floor(Math.random() * 3);
+    let randomNumber = Math.floor(Math.random() * 10);
     let number = +tokennumber + +randomNumber;
     let endTickNumber = +document.querySelector('#endTick').textContent;
-    let endTick = endTickNumber / 10 * 9;
-    let howMaxNumber = Math.round(+tokennumber * 10 / endTickNumber);
+    let endTick = endTickNumber / 100 * 95;
+    let howMaxNumber = Math.round(+tokennumber * 100 / endTickNumber);
 
     // localStorage.clear();
 
@@ -19,8 +19,8 @@ let timerId = setTimeout(function tick() {
 
         document.querySelector(".progress-line").style.width = " " + howMaxNumber + "%";
 
-        timerId = setTimeout(tick, 130);
+        timerId = setTimeout(tick, 1300);
     } else {
         console.log("end")
     }
-}, 150);
+}, 1500);
